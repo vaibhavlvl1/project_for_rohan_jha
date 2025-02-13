@@ -1271,10 +1271,18 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Starter Section Section
+# Academics Section
 --------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
+.academics-style-underline {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: color-mix(in srgb, var(--accent-color), transparent 0%);
+  margin-bottom: 20px;
+  border-top: 3px solid #149ddd20;
+  border-bottom: 3px solid #149ddd20;
+  padding: 10px 0 10px 20px;
 }
 
 /* --------------------------
@@ -1299,12 +1307,14 @@ section,
 }
 
 .research-topics {
-  margin: 0;
-  padding: 0;
-  text-transform: uppercase;
-  color: #149ddd;
-  padding: 5px;
+  line-height: 18px;
   font-size: 24px;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: color-mix(in srgb, var(--accent-color), transparent 0%);
+  margin-bottom: 20px;
+
+  padding: 10px 0 10px 20px;
 }
 
 .research-topics img {
@@ -1317,15 +1327,20 @@ section,
 # Social Impact Section
 -------------------------------------*/
 
+.social-impact-icon {
+  width: 64px;
+  height: 64px;
+  margin-right: 10px;
+}
+
 .social-impact-subhead {
   line-height: 18px;
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 700;
   text-transform: capitalize;
   color: color-mix(in srgb, var(--accent-color), transparent 0%);
   margin-bottom: 20px;
-  border-top: 3px solid #149ddd20;
-  border-bottom: 3px solid #149ddd20;
+
   padding: 10px 0 10px 20px;
 }
 
@@ -1335,6 +1350,26 @@ section,
 
 .owl-carousel .owl-stage-outer {
   height: 50vh;
+}
+
+.owl-carousel .item {
+  position: relative;
+}
+
+.owl-carousel .item .item-link {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  background-color: #149ddd;
+  width: 100%;
+  opacity: 0;
+  transition: 0.2s linear all;
+}
+.owl-carousel .item:hover .item-link {
+  opacity: 1;
+}
+.owl-carousel .item .item-link a {
+  color: #fff;
 }
 
 .owl-carousel .item img {
