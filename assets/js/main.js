@@ -245,7 +245,33 @@
 
 // social media coverage pop up
 $(document).ready(function () {
-  $(".owl-carousel").owlCarousel({
+  $(".first-carousel").owlCarousel({
+    loop: true,
+    margin: 10,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true,
+    responsive: {
+      0: { items: 1 } /* 1 image on mobile */,
+      768: { items: 2 } /* 2 images on tablets */,
+      1024: { items: 3 } /* 3 images on desktops */,
+    },
+  });
+
+  $(".second-carousel").owlCarousel({
+    loop: true,
+    margin: 10,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true,
+    responsive: {
+      0: { items: 1 } /* 1 image on mobile */,
+      768: { items: 2 } /* 2 images on tablets */,
+      1024: { items: 3 } /* 3 images on desktops */,
+    },
+  });
+
+  $(".third-carousel").owlCarousel({
     loop: true,
     margin: 10,
     autoplay: true,

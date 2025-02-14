@@ -269,7 +269,7 @@ h6 {
 .navmenu a,
 .navmenu a:focus {
   color: var(--nav-color);
-  padding: 12px 10px;
+  padding: 8px 10px;
   font-family: var(--nav-font);
   font-size: 16px;
   font-weight: 400;
@@ -1275,14 +1275,25 @@ section,
 --------------------------------------------------------------*/
 .academics-style-underline {
   line-height: 18px;
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 700;
   text-transform: capitalize;
   color: color-mix(in srgb, var(--accent-color), transparent 0%);
   margin-bottom: 20px;
-  border-top: 3px solid #149ddd20;
-  border-bottom: 3px solid #149ddd20;
+
   padding: 10px 0 10px 20px;
+}
+
+.ap-list-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.ap-list-13 a {
+  color: #040b14;
+}
+.ap-list-13 a:hover {
+  color: #149ddd;
 }
 
 /* --------------------------
@@ -1383,6 +1394,17 @@ section,
   box-shadow: 0px 10px 20px #999;
 }
 
+.carousel-container h4 {
+  line-height: 18px;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: color-mix(in srgb, var(--accent-color), transparent 0%);
+  margin-bottom: 20px;
+
+  padding: 10px 0 10px 20px;
+}
+
 /* --------------------------------
 # Social Icons In Contact us Page
 ---------------------------------- */
@@ -1408,18 +1430,17 @@ section,
 
 .awards-content h4 {
   line-height: 18px;
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 700;
   text-transform: capitalize;
   color: color-mix(in srgb, var(--accent-color), transparent 0%);
-  margin-bottom: 10px;
-  border-top: 3px solid #149ddd20;
-  border-bottom: 3px solid #149ddd20;
+  margin-bottom: 20px;
+
   padding: 10px 0 10px 20px;
 }
 
 .awards-content ul {
-  list-style: none;
+  /* list-style: none; */
   margin-top: 20px;
   margin-bottom: 30px;
 }
