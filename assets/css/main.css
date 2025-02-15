@@ -1334,6 +1334,13 @@ section,
   margin-right: 10px;
 }
 
+.paper-significance {
+  background-color: #f4fafd;
+  border: 2px double #149ddd;
+  padding: 5px;
+  font-weight: 500;
+}
+
 /*--------------------------------------
 # Social Impact Section
 -------------------------------------*/
