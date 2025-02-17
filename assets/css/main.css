@@ -1491,11 +1491,56 @@ section,
 # Impact and Assessment styles
 ---------------------------- */
 
-.bar-chart-container img {
-  max-width: 500px;
-  height: auto;
+/* underline h4 heading styles  */
+
+.underline-h4-heading {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: color-mix(in srgb, var(--accent-color), transparent 0%);
+  margin-bottom: 10px;
+  border-top: 3px solid #149ddd20;
+  border-bottom: 3px solid #149ddd20;
+  padding: 10px 0 10px 0;
 }
 
-.bar-chart-container p {
-  min-width: 500px;
+/* books list */
+.books-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.books-list li {
+  margin-top: 3px;
+  margin-right: 23px;
+}
+
+.books-list li::marker {
+  color: #149ddd !important;
+}
+
+/* media queries */
+
+@media (max-width: 768px) {
+  .social-impact-icon {
+    width: 40px;
+    height: 40px;
+  }
+  .academics-style-underline {
+    font-size: 20px;
+    line-height: 23px;
+  }
+
+  .research-topics img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .resume .resume-item h4 {
+    line-height: 23px;
+  }
+
+  .social-impact-subhead {
+    line-height: 25px;
+  }
 }
