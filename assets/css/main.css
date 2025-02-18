@@ -1398,7 +1398,7 @@ section,
 
 .owl-carousel .item .item-link {
   position: absolute;
-  bottom: 0;
+  bottom: 24px;
   text-align: center;
   background-color: #149ddd;
   width: 100%;
