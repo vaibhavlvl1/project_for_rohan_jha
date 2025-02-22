@@ -213,3 +213,5 @@ $(document).ready(function () {
 document.querySelectorAll("img").forEach((img) => {
   img.setAttribute("loading", "lazy");
 });
+
+document.querySelector(".counterimg").setAttribute("alt", "visitor counter");
