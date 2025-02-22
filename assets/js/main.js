@@ -173,6 +173,12 @@ $(document).ready(function () {
   $(".first-carousel").owlCarousel({
     loop: true,
     margin: 10,
+    nav: true,
+    dots: false,
+    navText: [
+      "<span aria-label='Previous slide'>❮</span>",
+      "<span aria-label='Next slide'>❯</span>",
+    ],
     autoplay: true,
     autoplayTimeout: 3000,
     autoplayHoverPause: true,
@@ -186,6 +192,12 @@ $(document).ready(function () {
   $(".second-carousel").owlCarousel({
     loop: true,
     margin: 10,
+    dots: false,
+    nav: true,
+    navText: [
+      "<span aria-label='Previous slide'>❮</span>",
+      "<span aria-label='Next slide'>❯</span>",
+    ],
     autoplay: true,
     autoplayTimeout: 3000,
     autoplayHoverPause: true,
@@ -199,6 +211,12 @@ $(document).ready(function () {
   $(".third-carousel").owlCarousel({
     loop: true,
     margin: 10,
+    nav: true,
+    navText: [
+      "<span aria-label='Previous slide'>❮</span>",
+      "<span aria-label='Next slide'>❯</span>",
+    ],
+    dots: false,
     autoplay: true,
     autoplayTimeout: 3000,
     autoplayHoverPause: true,
@@ -215,7 +233,3 @@ document.querySelectorAll("img").forEach((img) => {
 });
 
 document.querySelector(".counterimg").setAttribute("alt", "visitor counter");
-
-$(".owl-carousel").on("initialized.owl.carousel", function () {
-  $(".owl-dot").attr("aria-label", "image slide");
-});
