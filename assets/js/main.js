@@ -228,14 +228,7 @@ $(document).ready(function () {
   });
 });
 
-document.querySelectorAll("img:not([loading])").forEach((img) => {
-  // Exclude images without a `src` or that are likely above the fold
-  if (
-    img.src.startsWith("data:") ||
-    img.getBoundingClientRect().top < window.innerHeight
-  ) {
-    return;
-  }
+document.querySelectorAll("img:not(.hero-img)").forEach((img) => {
   img.setAttribute("loading", "lazy");
 });
 
