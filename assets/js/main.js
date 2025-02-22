@@ -215,4 +215,7 @@ document.querySelectorAll("img").forEach((img) => {
 });
 
 document.querySelector(".counterimg").setAttribute("alt", "visitor counter");
-document.querySelector(".owl-dot").setAttribute("aria-label", "Image Slide");
+
+$(".owl-carousel").on("initialized.owl.carousel", function () {
+  $(".owl-dot").attr("aria-label", "image slide");
+});
