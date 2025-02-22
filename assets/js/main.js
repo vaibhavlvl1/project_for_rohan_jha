@@ -228,7 +228,14 @@ $(document).ready(function () {
   });
 });
 
-document.querySelectorAll("img").forEach((img) => {
+document.querySelectorAll("img:not([loading])").forEach((img) => {
+  // Exclude images without a `src` or that are likely above the fold
+  if (
+    img.src.startsWith("data:") ||
+    img.getBoundingClientRect().top < window.innerHeight
+  ) {
+    return;
+  }
   img.setAttribute("loading", "lazy");
 });
 
