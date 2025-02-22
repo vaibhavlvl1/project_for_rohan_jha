@@ -232,4 +232,13 @@ document.querySelectorAll("img").forEach((img) => {
   img.setAttribute("loading", "lazy");
 });
 
-document.querySelector(".counterimg").setAttribute("alt", "visitor counter");
+const observer = new MutationObserver((mutations, obs) => {
+  const counterImg = document.querySelector(".counterimg");
+  if (counterImg) {
+    counterImg.setAttribute("alt", "visitor counter");
+    obs.disconnect(); // Stop observing once the element is found
+  }
+});
+
+// Observe changes in the document body
+observer.observe(document.body, { childList: true, subtree: true });

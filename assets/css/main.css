@@ -526,6 +526,22 @@ section,
   }
 }
 
+/* The Im a section tweaks */
+
+.imadescriptionformobile {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .imadescrition {
+    display: none;
+  }
+
+  .imadescriptionformobile {
+    display: block;
+  }
+}
+
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
