@@ -177,6 +177,12 @@ h6 {
   right: 15px;
   z-index: 9999;
   transition: background-color 0.3s;
+
+  /* for safari browsers */
+
+  transform: translateZ(0);
+  will-change: transform, opacity;
+  backface-visibility: hidden;
 }
 
 .header .header-toggle:hover {
