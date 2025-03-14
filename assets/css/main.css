@@ -161,7 +161,7 @@ h6 {
   left: 0;
 }
 
-.header .header-toggle {
+.header-toggle {
   color: var(--contrast-color);
   background-color: var(--accent-color);
   font-size: 22px;
@@ -170,19 +170,15 @@ h6 {
   justify-content: center;
   width: 40px;
   height: 40px;
-  border-radius: 50%;
+  border-radius: 10%;
   cursor: pointer;
-  position: fixed;
+  position: sticky;
   top: 15px;
-  right: 15px;
-  z-index: 9999;
+  /* left: 0px; */
+  margin-left: auto;
+  margin-right: 15px;
+  z-index: 99999;
   transition: background-color 0.3s;
-
-  /* for safari browsers */
-
-  transform: translateZ(0);
-  will-change: transform, opacity;
-  backface-visibility: hidden;
 }
 
 .header .header-toggle:hover {
@@ -466,6 +462,9 @@ section,
   justify-content: center;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../img/static_hero.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .hero .container {
@@ -1187,5 +1186,12 @@ section,
 
   .social-impact-subhead {
     line-height: 25px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .hero {
+    margin-top: -40px;
+    padding-top: 0;
   }
 }
